@@ -1,3 +1,5 @@
+// Random message generator
+
 generateMessage = () => {
 
     // Variables for random message generation
