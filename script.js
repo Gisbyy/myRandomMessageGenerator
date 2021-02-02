@@ -1,16 +1,19 @@
-// Variables for weather message generation
-const randomMessage = {
-    location: ['Glasgow', 'Berlin', 'Paris', 'Madrid', 'Copenhagen', 'New York', 'Tokyo', 'Sydney', 'Moscow', 'Athens'],
-    weather: ['Raining', 'Snowing', 'Sunny', 'Overcast', 'Sleeting', 'Freezing'],
-    activity: ['Sleep', 'Cycle', 'Run', 'Swim', 'Eat'],
-    generateMessage(){
-        let randLoc = Math.floor(Math.random() * this.location.length);
-        let randWeather = Math.floor(Math.random() * this.weather.length);
-        let randActivity = Math.floor(Math.random() * this.activity.length);
-        
-    }
-}
+// Variables for random message generation
+const weather = ['raining', 'snowing', 'sunny', 'overcast', 'sleeting', 'freezing'];
+const location = ['Glasgow', 'Berlin', 'Paris', 'Madrid', 'Copenhagen', 'New York', 'Tokyo', 'Sydney', 'Moscow', 'Athens'];
+const activity = ['sleep', 'cycle', 'run', 'swim', 'eat'];
 
+
+generateMessage = () => {
+    // Random number generator for each array
+    let randWeather = Math.floor(Math.random() * weather.length);
+    let randLoc = Math.floor(Math.random() * location.length);
+    let randActivity = Math.floor(Math.random() * activity.length);
+    // Final message logged to console
+    console.log('When it is ' + (weather[randWeather]) + ' in ' + (location[randLoc]) + ', I like to ' + (activity[randActivity]));
+}
+   
+generateMessage()
 
 
 
