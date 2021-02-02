@@ -13,7 +13,7 @@ generateMessage = () => {
     let randActivity = activity[Math.floor(Math.random() * activity.length)];
     
     // Final message logged to console
-    console.log('When it is ' + randWeather + ' in ' + randLoc + ', I like to ' + randActivity + '.');
+    console.log(`When it is ${randWeather} in ${randLoc}, I like to ${randActivity}.`);
 }
    
 generateMessage();
